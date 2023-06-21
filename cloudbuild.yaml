@@ -1,18 +1,12 @@
 steps:
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
-      - 'ls'
-      - 'gs://ahmed-bucket-newproject-387311/**'
-    id: 'Check Bucket Files'
-    entrypoint: 'bash'
-    waitFor: ['-']
-    
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args:
       - '-m'
-      - 'cp'
+      - 'rsync'
       - '-r'
-      - '-c'
-      - '-n'
+      - '-x'
+      - '^\.git/.*$'
       - '.'
       - 'gs://ahmed-bucket-newproject-387311'
+
+logsBucket: ahmed-bucket-newproject-387311/build-logs
