@@ -1,0 +1,18 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - 'ls'
+      - 'gs://<bucket_name>/**'
+    id: 'Check Bucket Files'
+    entrypoint: 'bash'
+    waitFor: ['-']
+    
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - '-m'
+      - 'cp'
+      - '-r'
+      - '-c'
+      - '-n'
+      - '.'
+      - 'gs://<bucket_name>'
