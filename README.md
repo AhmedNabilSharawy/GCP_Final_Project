@@ -3,7 +3,7 @@
 
     In the analytics field, there is often a need to grant and revoke permissions to service accounts for accessing data stored in a live bucket. This process can be time-consuming and error-prone, especially when dealing with a large number of DAGs (Directed Acyclic Graphs) that require access to the live bucket.
 
-![Project UseCase](gcp.drawio.png)
+![Project UseCase](useCase.png)
 
 ### Here's a high-level overview of the use case:
 
