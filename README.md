@@ -6,7 +6,7 @@
 
 ![Project UseCase](useCase.png)
 
-### Here's a high-level overview of the use case:
+#### Here's a high-level overview of the use case:
 
     Set up CloudBuild: Configure the CloudBuild service to monitor changes in the repository where the DAGs are stored.
 
