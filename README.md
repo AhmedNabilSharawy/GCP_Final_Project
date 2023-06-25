@@ -35,7 +35,7 @@
 ![Project Demo-4](Demo/4.png)
 
 
-## Contributers:
+## Contributors:
 - [Ahmed Nabil Sharawy](https://www.linkedin.com/in/ahmed-nabil-sharawy-149880104/)
 - [Adham Mohamed Gaber](https://www.linkedin.com/in/adhammgaber/)
 - [Hager Essam AboShady](https://www.linkedin.com/in/hager-aboshady/)
