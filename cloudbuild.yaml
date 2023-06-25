@@ -1,12 +1,12 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gsutil'
-    args:
-      - '-m'
-      - 'rsync'
-      - '-r'
-      - '-x'
-      - '^\.git/.*$'
-      - '.'
-      - 'gs://ahmed-bucket-newproject-387311'
+- name: 'gcr.io/cloud-builders/gsutil'
+  args:
+  - '-m'
+  - 'rsync'
+  - '-r'
+  - '-x'
+  - '^\.git/*$'
+  - '.'
+  - 'gs://ahmed-bucket-newproject-387311'
 
 logsBucket: ahmed-bucket-newproject-387311/build-logs
