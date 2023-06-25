@@ -4,8 +4,6 @@ steps:
   - '-m'
   - 'rsync'
   - '-r'
-  - '-x'
-  - '^\.git/*$'
   - '.'
   - 'gs://ahmed-bucket-newproject-387311'
 
